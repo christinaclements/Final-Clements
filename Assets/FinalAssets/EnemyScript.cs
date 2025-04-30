@@ -30,9 +30,7 @@ public class EnemyScript : MonoBehaviour
         if (player != null) return;
         timer += Time.deltaTime;
         if (timer >= damageInt) { 
-            
-                player.damage(damageAmount);
-            
+            player.damage(damageAmount);
             timer = 0f;
         }
     }
